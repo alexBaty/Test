@@ -51,8 +51,10 @@ class PostTableViewCell: UITableViewCell {
     }()
 
     override func setSelected(_ selected: Bool, animated: Bool) {
+
         getCells()
         createPostTableViewCellConstraints()
+
     }
 
     private func getCells() {

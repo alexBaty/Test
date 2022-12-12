@@ -33,6 +33,7 @@ class ProfileViewController: UIViewController {
     let tableView: UITableView = {
         var tableView = UITableView()
         tableView.backgroundColor = .white
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
 
@@ -52,7 +53,7 @@ class ProfileViewController: UIViewController {
 
     func createTableViewconstraints() {
 
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+
 
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
