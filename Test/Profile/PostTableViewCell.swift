@@ -9,6 +9,8 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
+    static let cellID = "PostTableViewCell"
+
     let authorCell: UILabel = {
         var authorCell = UILabel(frame: .zero)
         authorCell.font = UIFont.systemFont(ofSize: 20, weight: .bold)
@@ -26,8 +28,8 @@ class PostTableViewCell: UITableViewCell {
         return descriptionCell
     }()
 
-    let imageCell: UIView = {
-        var imageCell = UIView(frame: .zero)
+    let imageCell: UIImageView = {
+        var imageCell = UIImageView(frame: .zero)
         imageCell.contentMode = .scaleAspectFit
         imageCell.backgroundColor = .black
         imageCell.translatesAutoresizingMaskIntoConstraints = false
@@ -51,55 +53,36 @@ class PostTableViewCell: UITableViewCell {
     }()
 
     override func setSelected(_ selected: Bool, animated: Bool) {
-
+        super.setSelected(selected, animated: animated)
         getCells()
         createPostTableViewCellConstraints()
-
     }
 
     private func getCells() {
-        contentView.addSubview(authorCell)
-//        contentView.addSubview(descriptionCell)
-//        contentView.addSubview(imageCell)
-//        contentView.addSubview(likesCell)
-//        contentView.addSubview(viewsCell)
+        addSubview(authorCell)
+        addSubview(descriptionCell)
+        addSubview(imageCell)
+        addSubview(likesCell)
+        addSubview(viewsCell)
     }
 
     func createPostTableViewCellConstraints() {
 
         NSLayoutConstraint.activate([
-//            contentView.heightAnchor.constraint(equalToConstant: 500),
-//            contentView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
             authorCell.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-            authorCell.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-//            authorCell.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-//            authorCell.heightAnchor.constraint(equalToConstant: 20),
-//            imageCell.topAnchor.constraint(equalTo: authorCell.bottomAnchor, constant: 12),
-//            imageCell.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-//            imageCell.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-//            imageCell.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
-//            descriptionCell.topAnchor.constraint(equalTo: imageCell.bottomAnchor, constant: 16),
-//            descriptionCell.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-//            descriptionCell.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-//            descriptionCell.heightAnchor.constraint(equalToConstant: 14),
-//            likesCell.topAnchor.constraint(equalTo: descriptionCell.bottomAnchor, constant: 16),
-//            likesCell.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-//            likesCell.heightAnchor.constraint(equalToConstant: 16),
-//            viewsCell.topAnchor.constraint(equalTo: descriptionCell.bottomAnchor, constant: 16),
-//            viewsCell.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-//            viewsCell.heightAnchor.constraint(equalToConstant: 16)
+            authorCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
+            imageCell.topAnchor.constraint(equalTo: authorCell.bottomAnchor, constant: 12),
+            imageCell.rightAnchor.constraint(equalTo: rightAnchor),
+            imageCell.leftAnchor.constraint(equalTo: leftAnchor),
+            imageCell.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
+            descriptionCell.topAnchor.constraint(equalTo: imageCell.bottomAnchor, constant: 16),
+            descriptionCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
+            descriptionCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
+            likesCell.topAnchor.constraint(equalTo: descriptionCell.bottomAnchor, constant: 16),
+            likesCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
+            likesCell.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
+            viewsCell.topAnchor.constraint(equalTo: descriptionCell.bottomAnchor, constant: 16),
+            viewsCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -16)
         ])
     }
-
-
-
-
-
-
-
-
-
-
-
-    
 }
