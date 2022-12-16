@@ -28,7 +28,7 @@ class ProfileViewController: UIViewController {
     private var dataSource: [ModelPost] = [postOne, postTwo, postThree, postFour]
 
     let tableView: UITableView = {
-        var tableView = UITableView()
+        var tableView = UITableView(frame: .zero, style: .grouped)
         tableView.backgroundColor = .systemGray6
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
