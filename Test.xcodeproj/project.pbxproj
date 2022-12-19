@@ -11,6 +11,9 @@
 		E9532C2B2935246A00658536 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9532C2A2935246A00658536 /* SceneDelegate.swift */; };
 		E9532C322935246B00658536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9532C312935246B00658536 /* Assets.xcassets */; };
 		E9532C352935246B00658536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9532C332935246B00658536 /* LaunchScreen.storyboard */; };
+		E971F3B5294CEB51001B52BF /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971F3B4294CEB51001B52BF /* PhotosTableViewCell.swift */; };
+		E971F3BB294E4883001B52BF /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971F3BA294E4883001B52BF /* PhotosViewController.swift */; };
+		E971F3BF294F4148001B52BF /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971F3BE294F4148001B52BF /* PhotosCollectionViewCell.swift */; };
 		E985AAB92946594600C269BA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E985AAB82946594600C269BA /* PostTableViewCell.swift */; };
 		E9CEBAD12937D53E00D5C4FA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEBAD02937D53E00D5C4FA /* ProfileViewController.swift */; };
 		E9CEBAD32937D5F400D5C4FA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEBAD22937D5F400D5C4FA /* FeedViewController.swift */; };
@@ -27,6 +30,9 @@
 		E9532C312935246B00658536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9532C342935246B00658536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9532C362935246B00658536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E971F3B4294CEB51001B52BF /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		E971F3BA294E4883001B52BF /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		E971F3BE294F4148001B52BF /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
 		E985AAB82946594600C269BA /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		E9CEBAD02937D53E00D5C4FA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E9CEBAD22937D5F400D5C4FA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				E9CEBAD02937D53E00D5C4FA /* ProfileViewController.swift */,
+				E971F3BA294E4883001B52BF /* PhotosViewController.swift */,
+				E971F3BE294F4148001B52BF /* PhotosCollectionViewCell.swift */,
+				E971F3B4294CEB51001B52BF /* PhotosTableViewCell.swift */,
 				E985AAB82946594600C269BA /* PostTableViewCell.swift */,
 				E9CEBAD82937E50000D5C4FA /* ProfileHeaderView.swift */,
 				E9D4F5CE2941041C003CE36F /* LogInViewController.swift */,
@@ -160,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E971F3B5294CEB51001B52BF /* PhotosTableViewCell.swift in Sources */,
+				E971F3BB294E4883001B52BF /* PhotosViewController.swift in Sources */,
 				E9CEBAD52937D7AA00D5C4FA /* PostViewController.swift in Sources */,
 				E9CEBAD12937D53E00D5C4FA /* ProfileViewController.swift in Sources */,
+				E971F3BF294F4148001B52BF /* PhotosCollectionViewCell.swift in Sources */,
 				E9CEBAD72937D7F400D5C4FA /* InfoViewController.swift in Sources */,
 				E9CEBAD32937D5F400D5C4FA /* FeedViewController.swift in Sources */,
 				E9D4F5CF2941041C003CE36F /* LogInViewController.swift in Sources */,
